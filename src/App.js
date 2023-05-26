@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1 className='text-3xl font-bold underline text-red-400'>Let's get this COVID19 Scanner Started</h1>
+      <h1 className='mt-5 text-3xl font-medium underline text-black font-Axiforma'>Let's get this COVID19 Scanner Started</h1>
     </>
   );
 }
