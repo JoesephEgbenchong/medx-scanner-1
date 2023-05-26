@@ -1,10 +1,18 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Scan from './pages/Scan';
+import NoPage from './pages/NoPage';
 
 function App() {
   return (
-    <>
-      <h1 className='mt-5 text-3xl font-medium underline text-black font-Axiforma'>Let's get this COVID19 Scanner Started</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/new-scan' element={<Scan />}></Route>
+        <Route path='*' element={<NoPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

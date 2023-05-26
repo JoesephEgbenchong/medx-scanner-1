@@ -9,6 +9,12 @@ module.exports = {
       fontFamily: {
         'Axiforma': ['Axiforma', 'sans-serif'],
       },
+
+      colors: {
+        'dark': '#222222',
+        'brandGreen': '#66ae33',
+        'success' : '#40a829',
+      },
     },
   },
   plugins: [],
