@@ -4,18 +4,24 @@ import square_bottom_left from '../assets/square-bottom-left.svg';
 import square_bottom_right from '../assets/square-bottom-right.svg';
 import square_top_left from '../assets/square-top-left.svg';
 import square_top_right from '../assets/square-top-right.svg';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { BsChevronLeft, BsChevronDown, BsQrCode } from 'react-icons/bs'
 
 export default function Scan() {
 
   const [formData, setFormData] = useState({});
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
 
     setFormData(values =>({...values, [name]: value}))
+  }
+
+  const handleSubmit =  (event) => {
+    event.preventDefault();
+    navigate('/scanning');
   }
 
   return (
@@ -59,7 +65,7 @@ export default function Scan() {
             after:border-b-2 after:flex-1 after:border-gray-500">
               <p className="text-center font-Axiforma text-dark text-sm font-semibold mx-4">or enter the code manually</p>
           </div>
-          <form className="">
+          <form onSubmit={handleSubmit}>
             <input className="w-full px-4 py-2 text-lg text-gray-700 rounded-[10px] bg-white 
               border-gray-400 transition ease-in-out mb-6 font-Axiforma" 
               type="text" name="code" 
