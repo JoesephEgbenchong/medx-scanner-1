@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className='mt-[200px] text-[44px] leading-tight font-bold uppercase text-dark font-Axiforma'>
                     keeping communities safe, one scan at a time</h1>
                 <p className='font-medium text-xl font-Axiforma text-brandGreen 
-                mb-[80px]'>Let’s00 ensure a secure environment with QR code verification</p>
+                mb-[80px]'>Let’s ensure a secure environment with QR code verification</p>
 
                 <div>
                     <Link to="/new-scan" className='text-white bg-dark px-7 py-4 border-2 border-dark
