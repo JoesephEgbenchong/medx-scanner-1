@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <>
-        <div className='max-w-7xl ml-auto flex justify-between'>
+        <div className='max-w-7xl mx-auto flex justify-between'>
             <div className='w-full'>
                 <img src={logo} alt="MEDx-logo" className='mt-[20px]' />
                 <h1 className='mt-[200px] text-[44px] leading-tight font-bold uppercase text-dark font-Axiforma'>
@@ -27,7 +27,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='w-[100%] ml-[30px]'>
-                <img src={welcomeImage} alt="Welcome Image" height="500"/>
+                <img src={welcomeImage} alt="Welcome Image" className='sm:h-screen md:h-auto'/>
             </div>
             
         </div>
